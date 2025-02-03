@@ -22,7 +22,7 @@ BUTTON_TEXT_COLOR = (255, 255, 255)
 
 # Screen setup
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pygame.display.set_caption("Nhóm 8")
+pygame.display.set_caption("Home")
 
 # Fonts
 font = pygame.font.Font(None, 36)

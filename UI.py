@@ -26,7 +26,7 @@ GRID_COLOR = (255, 255, 255)
 
 # Screen setup
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pygame.display.set_caption("Nhóm 8")
+pygame.display.set_caption("VS Human")
 
 # Fonts
 font = pygame.font.Font(None, 36)
@@ -59,8 +59,8 @@ def draw_board():
                 screen.blit(text, text_rect)         
 
     # Vẽ số lần thắng
-    score_offset_x = WINDOW_WIDTH - 550  # Vị trí hiển thị ở bên phải
-    screen.blit(score_font.render("WIN", True, WIN_TEXT_COLOR), (score_offset_x, board_start_y))
+    score_offset_x = WINDOW_WIDTH - 557  # Vị trí hiển thị ở bên phải
+    screen.blit(score_font.render("Score", True, WIN_TEXT_COLOR), (score_offset_x, board_start_y))
     screen.blit(score_font.render(f"X: {x_wins}", True, SOFT_YELLOW), (score_offset_x, board_start_y + 50))
     screen.blit(score_font.render(f"O: {o_wins}", True, LIGHT_PINK), (score_offset_x, board_start_y + 100))
 
